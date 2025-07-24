@@ -1,0 +1,7 @@
+{
+  "name": "Moonlight Events - World Festivals",
+  "description": "A single-page application that provides information about various festivals celebrated across the world, including categorization by country and religion, a gallery, and interactive features.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
