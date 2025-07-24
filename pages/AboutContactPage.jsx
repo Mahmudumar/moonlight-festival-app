@@ -36,8 +36,8 @@ const AboutContactPage= () => {
                 <h1 className="text-4xl font-bold text-brand-primary mb-4">Contact Information</h1>
                 <div className="space-y-3 text-lg text-gray-300">
                     <p><strong>Email:</strong> <a href="mailto:info@moonlightevents.com" className="text-brand-secondary hover:underline">info@moonlightevents.com</a></p>
-                    <p><strong>Address:</strong> 123 Festival Lane, Celebration City, 12345</p>
-                    <p><strong>Phone:</strong> (123) 456-7890</p>
+                    <p><strong>Address:</strong>3rd floor Aptech, Wuse II, Abuja</p>
+                    <p><strong>Phone:</strong> +234 812 345 6789</p>
                 </div>
             </div>
 
