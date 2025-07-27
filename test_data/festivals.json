@@ -11,11 +11,11 @@
   },
   {
     "id": 2,
-    "name": "Dummy festival",
-    "country": "India",
-    "religion": "Hinduism",
+    "name": "La Tomatina",
+    "country": "Spain",
+    "religion": "Any",
     "month": "December",
-    "description": "some descrip",
+    "description": "The biggest food fight 🤣",
     "history": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo obcaecati, esse libero consequuntur qui quasi? Laboriosam quas dolorum necessitatibus corrupti.",
     "images": ["", "", ""]
   }
