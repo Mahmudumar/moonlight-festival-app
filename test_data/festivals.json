@@ -40,5 +40,19 @@
       "assets/imgs/festivals/chineseNY.png",
       "assets/imgs/festivals/chineseNY.png"
     ]
+  },
+  {
+    "id": 4,
+    "name": "Setsubun",
+    "country": "Japan",
+    "religion": "Any",
+    "month": "December",
+    "description": "China new year",
+    "history": "The Setsubun festival in Japan is celebrated on February 3rd to mark the beginning of spring. During this festival, people throw roasted soybeans while chanting \"On wa soto! Fuku wa uchi!\" (Out with evil! In with fortune!) to drive away evil spirits and invite good luck.",
+    "images": [
+      "assets/imgs/festivals/setsubun.png",
+      "assets/imgs/festivals/setsubun.png",
+      "assets/imgs/festivals/setsubun.png"
+    ]
   }
 ]
