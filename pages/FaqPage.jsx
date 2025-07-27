@@ -1,13 +1,13 @@
+import React, { useState, useEffect } from 'react'; // Import useEffect
+import { loadData } from '../constants'; // Import loadData
 
-import React, { useState } from 'react';
-import { faqItems } from '../constants';
 const ChevronDownIcon = ({ className }) => (
     <svg xmlns="http://www.w3.org/2000/svg" className={className || "h-6 w-6"} fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
     </svg>
 );
 
-const FaqItem= ({ item }) => {
+const FaqItem = ({ item }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
@@ -29,19 +29,50 @@ const FaqItem= ({ item }) => {
 };
 
 
-const FaqPage= () => {
+const FaqPage = () => {
+    const [faqItems, setFaqItems] = useState([]); // Manage faqItems as state
+    const [loading, setLoading] = useState(true); // Add loading state
+    const [error, setError] = useState(null);     // Add error state
+
+    // Use useEffect to load data when the component mounts
+    useEffect(() => {
+        const getFaqData = async () => {
+            setLoading(true); // Start loading
+            setError(null);   // Clear any previous errors
+            try {
+                // Call loadData, which now returns the fetched data
+                const { faqItems: loadedFaqItems } = await loadData();
+                setFaqItems(loadedFaqItems); // Update state with loaded data
+            } catch (err) {
+                console.error("Error loading FAQ data:", err);
+                setError("Failed to load FAQs. Please try again later."); // User-friendly error
+            } finally {
+                setLoading(false); // End loading, whether success or fail
+            }
+        };
+
+        getFaqData();
+    }, []); // Empty dependency array means this runs once on mount
+
     return (
         <div className="max-w-3xl mx-auto font-serif">
             <h1 className="text-4xl font-bold text-center text-brand-primary mb-8">Frequently Asked Questions</h1>
             <div className="space-y-4">
-                {faqItems.map((item, index) => (
-                    <FaqItem key={index} item={item} />
-                ))}
+                {loading ? (
+                    <p className="text-center text-gray-400">Loading FAQs...</p>
+                ) : error ? (
+                    <p className="text-center text-red-400">{error}</p>
+                ) : faqItems.length > 0 ? (
+                    faqItems.map((item, index) => (
+                        <FaqItem key={index} item={item} />
+                    ))
+                ) : (
+                    <p className="text-center text-gray-400">No FAQs available at the moment.</p>
+                )}
             </div>
         </div>
     );
 };
 
 export default FaqPage;
-
 // Coded by Umar Mahmud Ahmad with junior dev support from Gemini & ChatGPT 

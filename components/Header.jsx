@@ -40,7 +40,7 @@ const Header= () => {
 
   return (
     <header className="bg-dark-bg shadow-lg font-serif top-0 z-50">
-      <div className="relative h-48 bg-cover bg-center" style={{ backgroundImage: "url('https://picsum.photos/seed/banner/1200/400')" }}>
+      <div className="relative h-48 bg-cover bg-center" style={{ backgroundImage: "url(/assets/imgs/multiple_festivals/festivals.png)" }}>
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
             <h1 className="text-4xl md:text-5xl text-white font-bold tracking-wider text-center">Moonlight Events</h1>
         </div>

@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Diwali",
+    "country": "India",
+    "religion": "Hinduism",
+    "month": "October",
+    "description": "some descrip",
+    "history": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo obcaecati, esse libero consequuntur qui quasi? Laboriosam quas dolorum necessitatibus corrupti.",
+    "images": ["/assets/imgs/festivals/diwali.png", "/assets/imgs/festivals/diwali2.png", "/assets/imgs/festivals/diwali.png"]
+  },
+  {
+    "id": 2,
+    "name": "Dummy festival",
+    "country": "India",
+    "religion": "Hinduism",
+    "month": "December",
+    "description": "some descrip",
+    "history": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo obcaecati, esse libero consequuntur qui quasi? Laboriosam quas dolorum necessitatibus corrupti.",
+    "images": ["", "", ""]
+  }
+]
