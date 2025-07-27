@@ -1,7 +1,7 @@
 // Coded by Umar Mahmud Ahmad with junior dev support from Gemini & ChatGPT
 
 import React, { useState, useEffect, useMemo } from 'react';
-import { jsPDF } from "jspdf"; // Keep this if used in FestivalModal
+import { jsPDF } from "jspdf"; 
 import { loadData, ALL_RELIGIONS, ALL_MONTHS } from '../constants';
 
 const DownloadIcon = ({ className }) => (
@@ -109,7 +109,6 @@ const FestivalCard = ({ festival, onSelect }) => (
         </div>
     </div>
 );
-
 
 const HomePage = () => {
     const [festivals, setFestivals] = useState([]); // Manage festivals as state
