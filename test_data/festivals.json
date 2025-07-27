@@ -7,7 +7,11 @@
     "month": "October",
     "description": "some descrip",
     "history": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo obcaecati, esse libero consequuntur qui quasi? Laboriosam quas dolorum necessitatibus corrupti.",
-    "images": ["/assets/imgs/festivals/diwali.png", "/assets/imgs/festivals/diwali2.png", "/assets/imgs/festivals/diwali.png"]
+    "images": [
+      "/assets/imgs/festivals/diwali.png",
+      "/assets/imgs/festivals/diwali2.png",
+      "/assets/imgs/festivals/diwali.png"
+    ]
   },
   {
     "id": 2,
@@ -17,6 +21,24 @@
     "month": "December",
     "description": "The biggest food fight 🤣",
     "history": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo obcaecati, esse libero consequuntur qui quasi? Laboriosam quas dolorum necessitatibus corrupti.",
-    "images": ["", "", ""]
+    "images": [
+      "assets/imgs/festivals/la_tomatina.png",
+      "assets/imgs/festivals/la_tomatina.png",
+      "assets/imgs/festivals/la_tomatina.png"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Chinese New Year",
+    "country": "China",
+    "religion": "Any",
+    "month": "December",
+    "description": "China new year",
+    "history": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo obcaecati, esse libero consequuntur",
+    "images": [
+      "assets/imgs/festivals/chineseNY.png",
+      "assets/imgs/festivals/chineseNY.png",
+      "assets/imgs/festivals/chineseNY.png"
+    ]
   }
 ]
