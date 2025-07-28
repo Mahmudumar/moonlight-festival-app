@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { HashRouter, Routes, Route, Outlet } from 'react-router-dom';
 import Header from './components/Header';
@@ -9,10 +8,10 @@ import AboutContactPage from './pages/AboutContactPage';
 import FaqPage from './pages/FaqPage';
 
 const AppLayout = () => (
-  <div className="flex flex-col min-h-screen">
+  <div className="bg-dark text-white p-3 d-flex flex-column min-vh-100">
     <Header />
     {/* the first class is for offline use */}
-    <main className="fest-list flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-8 animate-fade-in">
+    <main className="flex-grow-1 container py-4 animate-fade-in">
       <Outlet />
     </main>
     <Footer />
@@ -39,4 +38,4 @@ const App = () => {
 };
 
 export default App;
-// Coded by Umar Mahmud Ahmad with junior dev support from Gemini & ChatGPT 
+// Coded by Umar Mahmud Ahmad with junior dev support from Gemini & ChatGPT

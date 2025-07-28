@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from 'react'; // Import useEffect
-import { loadData } from '../constants'; // Import loadData
+// Coded by Umar Mahmud Ahmad with junior dev support from Gemini & ChatGPT 
+
+import React, { useState, useEffect } from 'react';
+import { loadData } from '../constants';
 
 const ChevronDownIcon = ({ className }) => (
-    <svg xmlns="http://www.w3.org/2000/svg" className={className || "h-6 w-6"} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+    <svg xmlns="http://www.w3.org/2000/svg" className={className || "bi bi-chevron-down"} fill="currentColor" viewBox="0 0 16 16" width="20px">
+        <path fillRule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
     </svg>
 );
 
@@ -11,62 +13,60 @@ const FaqItem = ({ item }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className="border-b-2 border-gray-700">
+        <div className="border-bottom border-secondary">
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="w-full flex justify-between items-center text-left py-4 px-2"
+                className="w-100 btn d-flex justify-content-between align-items-center text-start py-3 px-2 bg-transparent border-0"
             >
-                <span className="text-lg font-semibold text-brand-primary">{item.question}</span>
-                <ChevronDownIcon className={`transform transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} />
+                <span className="fs-5 fw-semibold text-primary">{item.question}</span>
+                <ChevronDownIcon className={`transition-transform ${isOpen ? 'rotate-180' : ''}`} />
             </button>
-            <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? 'max-h-96' : 'max-h-0'}`}>
-                <p className="p-4 text-gray-300 bg-gray-800 rounded-b-md">
+            <div className={`collapse ${isOpen ? 'show' : ''}`}>
+                <div className="bg-dark text-white p-3 rounded-bottom">
                     {item.answer}
-                </p>
+                </div>
             </div>
         </div>
     );
 };
 
 const FaqPage = () => {
-    const [faqItems, setFaqItems] = useState([]); // Manage faqItems as state
-    const [loading, setLoading] = useState(true); // Add loading state
-    const [error, setError] = useState(null);     // Add error state
+    const [faqItems, setFaqItems] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
 
-    // Use useEffect to load data when the component mounts
     useEffect(() => {
         const getFaqData = async () => {
-            setLoading(true); // Start loading
-            setError(null);   // Clear any previous errors
+            setLoading(true);
+            setError(null);
             try {
-                // Call loadData, which now returns the fetched data
                 const { faqItems: loadedFaqItems } = await loadData();
-                setFaqItems(loadedFaqItems); // Update state with loaded data
+                setFaqItems(loadedFaqItems);
             } catch (err) {
                 console.error("Error loading FAQ data:", err);
-                setError("Failed to load FAQs. Please try again later."); // User-friendly error
+                setError("Failed to load FAQs. Please try again later.");
             } finally {
-                setLoading(false); // End loading, whether success or fail
+                setLoading(false);
             }
         };
 
         getFaqData();
-    }, []); // Empty dependency array means this runs once on mount
+    }, []);
 
     return (
-        <div className="max-w-3xl mx-auto font-serif">
-            <h1 className="text-4xl font-bold text-center text-brand-primary mb-8">Frequently Asked Questions</h1>
-            <div className="space-y-4">
+        <div className="container my-5">
+            <h1 className="text-center mb-4 text-primary">Frequently Asked Questions</h1>
+            <div className="accordion" id="faqAccordion">
                 {loading ? (
-                    <p className="text-center text-gray-400">Loading FAQs...</p>
+                    <p className="text-center text-muted">Loading FAQs...</p>
                 ) : error ? (
-                    <p className="text-center text-red-400">{error}</p>
+                    <p className="text-center text-danger">{error}</p>
                 ) : faqItems.length > 0 ? (
                     faqItems.map((item, index) => (
                         <FaqItem key={index} item={item} />
                     ))
                 ) : (
-                    <p className="text-center text-gray-400">No FAQs available at the moment.</p>
+                    <p className="text-center text-muted">No FAQs available at the moment.</p>
                 )}
             </div>
         </div>
@@ -74,4 +74,3 @@ const FaqPage = () => {
 };
 
 export default FaqPage;
-// Coded by Umar Mahmud Ahmad with junior dev support from Gemini & ChatGPT 

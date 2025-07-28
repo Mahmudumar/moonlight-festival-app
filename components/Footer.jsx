@@ -1,5 +1,5 @@
-
 import React, { useState, useEffect } from 'react';
+import { Container, Row, Col, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Ticker = () => {
@@ -16,8 +16,6 @@ const Ticker = () => {
             navigator.geolocation.getCurrentPosition(
                 (position) => {
                     const { latitude, longitude } = position.coords;
-                    // In a real app, you'd use a reverse geocoding service here.
-                    // For this demo, we'll just show coordinates.
                     setLocation(`Lat: ${latitude.toFixed(2)}, Lon: ${longitude.toFixed(2)}`);
                 },
                 () => {
@@ -32,48 +30,47 @@ const Ticker = () => {
     const tickerContent = `Current Time: ${dateTime.toLocaleTimeString()} | Date: ${dateTime.toLocaleDateString()} | Location: ${location}`;
 
     return (
-        <div className="bg-gray-800 text-gray-300 py-2 overflow-hidden whitespace-nowrap">
-            <div className="inline-block animate-ticker">
-                <span className="px-8">{tickerContent}</span>
-                <span className="px-8">{tickerContent}</span>
+        <div className="ticker-wrapper">
+            <div className="ticker-content">
+                {tickerContent} &nbsp;&nbsp;&nbsp; {tickerContent} &nbsp;&nbsp;&nbsp; {tickerContent}
             </div>
         </div>
+
     );
+
+
 };
 
 const Footer = () => {
     return (
-        <footer className="bg-dark-bg text-gray-400 font-sans">
+        <footer style={{ backgroundColor: '#212529', color: '#ccc', fontFamily: 'sans-serif' }}>
             <Ticker />
-            <div className="container mx-auto py-8 px-4 sm:px-6 lg:px-8">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
-                    <div>
-                        <h3 className="font-bold text-white text-lg mb-2">Moonlight Events</h3>
-                        <p className="text-sm">Celebrating cultural diversity through festivals worldwide.</p>
-                    </div>
-                    <div>
-                        <h3 className="font-bold text-white text-lg mb-2">Quick Links</h3>
-                        <ul className="space-y-1">
-                            <li><Link to="/" className="hover:text-brand-primary transition-colors">Home</Link></li>
-                            <li><Link to="/gallery" className="hover:text-brand-primary transition-colors">Gallery</Link></li>
-                            <li><Link to="/faq" className="hover:text-brand-primary transition-colors">FAQ</Link></li>
-                            <li><Link to="/sitemap" className="hover:text-brand-primary transition-colors">Sitemap</Link></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 className="font-bold text-white text-lg mb-2">Contact Us</h3>
-                        <Link to="/about-contact" className="hover:text-brand-primary transition-colors">eprojectgroup2@gmail.com</Link>
-                        <p className="text-sm">3rd floor Aptech, Wuse II, Abuja</p>
-
-                    </div>
-                </div>
-                <div className="mt-8 pt-4 border-t border-gray-700 text-center text-sm">
-                    <p>&copy; {new Date().getFullYear()} Moonlight Events. All Rights Reserved.</p>
-                </div>
-            </div>
+            <Container className="py-4">
+                <Row className="text-center text-md-start">
+                    <Col md={4} className="mb-3">
+                        <h5 className="text-white">Moonlight Events</h5>
+                        <p className="small">Celebrating cultural diversity through festivals worldwide.</p>
+                    </Col>
+                    <Col md={4} className="mb-3">
+                        <h5 className="text-white">Quick Links</h5>
+                        <Nav className="flex-column">
+                            <Nav.Link as={Link} to="/" className="text-light">Home</Nav.Link>
+                            <Nav.Link as={Link} to="/gallery" className="text-light">Gallery</Nav.Link>
+                            <Nav.Link as={Link} to="/faq" className="text-light">FAQ</Nav.Link>
+                            <Nav.Link as={Link} to="/sitemap" className="text-light">Sitemap</Nav.Link>
+                        </Nav>
+                    </Col>
+                    <Col md={4} className="mb-3">
+                        <h5 className="text-white">Contact Us</h5>
+                        <p className="mb-1"><Link to="/about-contact" className="text-light">eprojectgroup2@gmail.com</Link></p>
+                        <p className="small">3rd floor Aptech, Wuse II, Abuja</p>
+                    </Col>
+                </Row>
+                <hr className="border-secondary" />
+                <p className="text-center small">&copy; {new Date().getFullYear()} Moonlight Events. All Rights Reserved.</p>
+            </Container>
         </footer>
     );
 };
-// Coded by Umar Mahmud Ahmad with junior dev support from Gemini & ChatGPT 
 
 export default Footer;
