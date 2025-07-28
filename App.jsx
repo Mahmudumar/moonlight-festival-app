@@ -11,7 +11,8 @@ import FaqPage from './pages/FaqPage';
 const AppLayout = () => (
   <div className="flex flex-col min-h-screen">
     <Header />
-    <main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-8 animate-fade-in">
+    {/* the first class is for offline use */}
+    <main className="fest-list flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-8 animate-fade-in">
       <Outlet />
     </main>
     <Footer />

@@ -90,7 +90,8 @@ const FestivalModal = ({ festival, onClose }) => {
 };
 
 const FestivalCard = ({ festival, onSelect }) => (
-    <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+    // the first class in the classlist is for offline use
+    <div className="fest-card bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
         {/* Ensure festival.images[0] exists before using it */}
         {festival.images && festival.images[0] ? (
             <img className="w-full h-48 object-cover" src={festival.images[0]} alt={festival.name} />

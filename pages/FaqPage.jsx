@@ -28,7 +28,6 @@ const FaqItem = ({ item }) => {
     );
 };
 
-
 const FaqPage = () => {
     const [faqItems, setFaqItems] = useState([]); // Manage faqItems as state
     const [loading, setLoading] = useState(true); // Add loading state

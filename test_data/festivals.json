@@ -4,40 +4,41 @@
     "name": "Diwali",
     "country": "India",
     "religion": "Hinduism",
-    "month": "October",
-    "description": "some descrip",
-    "history": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo obcaecati, esse libero consequuntur qui quasi? Laboriosam quas dolorum necessitatibus corrupti.",
+    "month": "October - November",
+    "description": "Diwali, also known as the Festival of Lights, is one of the most important Hindu festivals, symbolizing the victory of light over darkness and good over evil.",
+    "history": "Diwali commemorates the return of Lord Rama to Ayodhya after 14 years of exile and his victory over the demon king Ravana. Homes are decorated with lamps and candles, fireworks are set off, and sweets are exchanged.",
     "images": [
-      "/assets/imgs/festivals/diwali.png",
-      "/assets/imgs/festivals/diwali2.png",
-      "/assets/imgs/festivals/diwali.png"
-    ]
+        "assets/imgs/festivals/diwali.png",
+        "assets/imgs/festivals/diwali2.png",
+        "assets/imgs/festivals/diwali3.png",
+        "assets/imgs/festivals/diwali4.png"
+      ]
   },
   {
     "id": 2,
     "name": "La Tomatina",
     "country": "Spain",
-    "religion": "Any",
-    "month": "December",
-    "description": "The biggest food fight 🤣",
-    "history": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo obcaecati, esse libero consequuntur qui quasi? Laboriosam quas dolorum necessitatibus corrupti.",
+    "religion": "Catholicism",
+    "month": "August",
+    "description": "La Tomatina is celebrated by throwing tomatoes at each other in a massive food fight.",
+    "history": "La Tomatina started the last Wednesday of August 1945 where some young people spent time in the town square to attend the Giants and Big-Heads figure parade. One participant's Big-Head fell off, as a result of the festivities. The participant flew into a fit of rage, and began hitting everything in their path. There was a market stall of vegetables that fell victim to the fury of the crowd, as people started to pelt each other with tomatoes until the local forces ended the fruit battle",
     "images": [
-      "assets/imgs/festivals/la_tomatina.png",
-      "assets/imgs/festivals/la_tomatina.png",
-      "assets/imgs/festivals/la_tomatina.png"
+      "assets/imgs/festivals/la tomatina.png",
+      "assets/imgs/festivals/la tomatina2.png",
+      "assets/imgs/festivals/la tomatina3.png"
     ]
   },
   {
     "id": 3,
     "name": "Chinese New Year",
     "country": "China",
-    "religion": "Any",
-    "month": "December",
-    "description": "China new year",
-    "history": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo obcaecati, esse libero consequuntur",
+    "religion": "Buddhism",
+    "month": "January - February",
+    "description": "Chinese New Year is a 15-day festival celebrated with firecrackers, fireworks, red decorations, and family gatherings.",
+    "history": "Legend tells of a monster named Nian who would terrorize villages every new year. People used red decorations, loud sounds, and bright lights to scare it away, forming the basis of the festival's customs.",
     "images": [
       "assets/imgs/festivals/chineseNY.png",
-      "assets/imgs/festivals/chineseNY.png",
+      "assets/imgs/festivals/chineseNY2.png",
       "assets/imgs/festivals/chineseNY.png"
     ]
   },
@@ -45,14 +46,82 @@
     "id": 4,
     "name": "Setsubun",
     "country": "Japan",
-    "religion": "Any",
-    "month": "December",
-    "description": "China new year",
-    "history": "The Setsubun festival in Japan is celebrated on February 3rd to mark the beginning of spring. During this festival, people throw roasted soybeans while chanting \"On wa soto! Fuku wa uchi!\" (Out with evil! In with fortune!) to drive away evil spirits and invite good luck.",
+    "religion": "Shinto & Buddhism",
+    "month": "February",
+    "description": "Setsubun is a traditional Japanese festival that marks the beginning of spring, where people throw beans to ward off evil spirits.",
+    "history": "On February 3rd, people chant 'Oni wa soto! Fuku wa uchi!' ('Demons out! Luck in!') while throwing roasted soybeans. This ritual is believed to bring good fortune and drive away misfortune.",
     "images": [
       "assets/imgs/festivals/setsubun.png",
-      "assets/imgs/festivals/setsubun.png",
-      "assets/imgs/festivals/setsubun.png"
+      "assets/imgs/festivals/setsubun2.png",
+      "assets/imgs/festivals/setsubun3.png"
     ]
+  },
+  {
+    "id": 5,
+    "name": "Carnival of Venice",
+    "country": "Italy",
+    "religion": "Catholicism",
+    "month": "February - March",
+    "description": "The Carnival of Venice is an annual festival known for its elaborate masks and Renaissance-era costumes.",
+    "history": "The carnival of Venice began after the military victory of the Venetian Republic over the patriarch of Aquileia, Ulrich II, in the year 1162. Apparently, this festival started in that period and became official during the Renaissance.",
+    "images": [
+        "assets/imgs/festivals/carnival.png",
+        "assets/imgs/festivals/carnival2.png"
+      ]
+  },
+  {
+    "id": 6,
+    "name": "Oktoberfest",
+    "country": "Germany",
+    "religion": "Christianity",
+    "month": "September - October",
+    "description": "Oktoberfest is the world's largest beer festival and traveling funfair held annually in Munich.",
+    "history": "On Oct 12th 1810, the crowned Prince Ludwig of Bavaria married Princess Therese of Saxe-Hildburghausen. Munich officials invited the public to celebrate on fields outside the city walls. The festivities included horse races, parades, music, etc. The event was so popular that it was decided to repeat it the following year, marking the beginning of the annual Oktoberfest festival.",
+    "images": [
+        "assets/imgs/festivals/oktoberfest.png",
+        "assets/imgs/festivals/oktoberfest2.png",
+        "assets/imgs/festivals/oktoberfest3.png",
+        "assets/imgs/festivals/oktoberfest4.png"
+      ]
+  },
+  {
+    "id": 7,
+    "name": "Mardi Gras",
+    "country": "France",
+    "religion": "Catholicism",
+    "month": "February",
+    "description": "Mardi Gras marks the final day of indulgence before the Christian season of Lent.",
+    "history": "Rooted in Christian tradition, Mardi Gras is a celebration before Lent’s fasting begins. The name means 'Fat Tuesday,' and the day is filled with parades, costumes, and feasting.",
+    "images": [
+        "assets/imgs/festivals/mardigras.png",
+        "assets/imgs/festivals/mardigras2.png"
+      ]
+  },
+  {
+    "id": 8,
+    "name": "Holi",
+    "country": "India",
+    "religion": "Hinduism",
+    "month": "March",
+    "description": "Holi is a vibrant Hindu festival celebrating colors, love, and the triumph of good over evil.",
+    "history": "Holi festivals celebrate fertility, love, and the triumph of good over evil. Two events, Holika Dahan and Rangwali Holi, make up Holi. Bonfires are burned during Holika Dahan to chase away evil spirits, and colored powders are thrown during the relaxed celebration of Rangwali Holi.",
+    "images": [
+        "assets/imgs/festivals/holi.png",
+        "assets/imgs/festivals/holi2.png",
+        "assets/imgs/festivals/holi3.png"
+      ]
+  },
+  {
+    "id": 9,
+    "name": "Glastonbury Festival",
+    "country": "United Kingdom",
+    "religion": "Christianity",
+    "month": "Every 5 years",
+    "description": "Glastonbury Festival is a major performing arts festival known for its music, creativity, and activism.",
+    "history": "Started in 1970, Glastonbury has grown into a five-day cultural event featuring music, arts, and eco-conscious causes. It's one of the world's most famous festivals of contemporary arts.",
+    "images": [
+        "assets/imgs/festivals/glaston.png",
+        "assets/imgs/festivals/glaston2.png"
+      ]
   }
 ]

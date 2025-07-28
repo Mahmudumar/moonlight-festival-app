@@ -1,0 +1,26 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+
+}
+body{
+    display: flex;
+}
+
+/* general style when there's no internet */
+svg.text-brand-primary{
+    width: 20px;
+}
+
+img{
+    width: 60px;
+}
+.fest-list{
+    /* background-color: #3e3e3e; */
+    display: grid;
+}
+.fest-card{
+    display: flex;
+    /* background-color: #808080; */
+}
