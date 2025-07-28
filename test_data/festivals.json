@@ -4,7 +4,7 @@
     "name": "Diwali",
     "country": "India",
     "religion": "Hinduism",
-    "month": "October - November",
+    "month": "October",
     "description": "Diwali, also known as the Festival of Lights, is one of the most important Hindu festivals, symbolizing the victory of light over darkness and good over evil.",
     "history": "Diwali commemorates the return of Lord Rama to Ayodhya after 14 years of exile and his victory over the demon king Ravana. Homes are decorated with lamps and candles, fireworks are set off, and sweets are exchanged.",
     "images": [
@@ -33,7 +33,7 @@
     "name": "Chinese New Year",
     "country": "China",
     "religion": "Buddhism",
-    "month": "January - February",
+    "month": "January",
     "description": "Chinese New Year is a 15-day festival celebrated with firecrackers, fireworks, red decorations, and family gatherings.",
     "history": "Legend tells of a monster named Nian who would terrorize villages every new year. People used red decorations, loud sounds, and bright lights to scare it away, forming the basis of the festival's customs.",
     "images": [
@@ -61,7 +61,7 @@
     "name": "Carnival of Venice",
     "country": "Italy",
     "religion": "Catholicism",
-    "month": "February - March",
+    "month": "February",
     "description": "The Carnival of Venice is an annual festival known for its elaborate masks and Renaissance-era costumes.",
     "history": "The carnival of Venice began after the military victory of the Venetian Republic over the patriarch of Aquileia, Ulrich II, in the year 1162. Apparently, this festival started in that period and became official during the Renaissance.",
     "images": [
@@ -74,7 +74,7 @@
     "name": "Oktoberfest",
     "country": "Germany",
     "religion": "Christianity",
-    "month": "September - October",
+    "month": "September",
     "description": "Oktoberfest is the world's largest beer festival and traveling funfair held annually in Munich.",
     "history": "On Oct 12th 1810, the crowned Prince Ludwig of Bavaria married Princess Therese of Saxe-Hildburghausen. Munich officials invited the public to celebrate on fields outside the city walls. The festivities included horse races, parades, music, etc. The event was so popular that it was decided to repeat it the following year, marking the beginning of the annual Oktoberfest festival.",
     "images": [
