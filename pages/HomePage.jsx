@@ -45,7 +45,7 @@ const FestivalModal = ({ festival, onClose }) => {
         y += 10;
         doc.text(splitDescription, 10, y);
         
-        doc.addImage(festival.images[0])
+        doc.addImage(festival.images[0], 'PNG', 10, y + 10, 180, 180); 
         doc.save(`${festival.name}_details.pdf`);
     };
 
