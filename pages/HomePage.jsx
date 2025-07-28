@@ -39,12 +39,13 @@ const FestivalModal = ({ festival, onClose }) => {
         y += 10;
         doc.text(splitHistory, 10, y);
         y += splitHistory.length * 7;
-
+        
         const splitDescription = doc.splitTextToSize(description, 180);
         doc.text("Description:", 10, y);
         y += 10;
         doc.text(splitDescription, 10, y);
-
+        
+        doc.addImage(festival.images[0])
         doc.save(`${festival.name}_details.pdf`);
     };
 
